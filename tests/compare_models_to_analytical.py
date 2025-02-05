@@ -20,7 +20,6 @@ import os
 import sys
 
 from colorama import init, Fore, Style
-init()
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,6 +30,8 @@ if sys.platform == 'linux':
 from gprMax.gprMax import api
 from gprMax.exceptions import GeneralError
 from tests.analytical_solutions import hertzian_dipole_fs
+
+init()
 
 """Compare field outputs
 

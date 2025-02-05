@@ -1,5 +1,6 @@
 import sys
 import unittest
+from gprMax.input_cmd_funcs import rx_steps, rx, src_steps
 
 # http://stackoverflow.com/a/17981937/1942837
 from contextlib import contextmanager
@@ -17,9 +18,6 @@ def captured_output():
         sys.stdout, sys.stderr = old_out, old_err
 
 # end stack copy
-
-from gprMax.input_cmd_funcs import *
-
 
 class My_input_cmd_funcs_test(unittest.TestCase):
     def assert_output(self, out, expected_out):
