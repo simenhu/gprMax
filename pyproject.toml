@@ -4,6 +4,7 @@ version = "3.1.7"
 description = "Electromagnetic Modelling Software based on the Finite-Difference Time-Domain (FDTD) method"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 requires-python = ">=3.11"
+
 dependencies = [
     "colorama",
     "cython",
@@ -18,11 +19,14 @@ dependencies = [
 ]
 
 license = {text = "GPLv3+"}
+
 authors = [
     {name = "Craig Warren"},
     {name = "Antonis Giannopoulos"}
 ]
+
 urls = {Homepage = "http://www.gprmax.com"}
+
 classifiers = [
     "Environment :: Console",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
@@ -33,7 +37,6 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Topic :: Scientific/Engineering"
 ]
-
 
 
 [dependency-groups]
