@@ -6,6 +6,7 @@ readme = {file = "README.rst", content-type = "text/x-rst"}
 requires-python = ">=3.11"
 
 dependencies = [
+    "setuptools",
     "colorama",
     "cython",
     "h5py",
