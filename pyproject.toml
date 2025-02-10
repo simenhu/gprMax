@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 
 dependencies = [
     "setuptools",
+    "wheel",
     "colorama",
     "cython",
     "h5py",
@@ -18,6 +19,10 @@ dependencies = [
     "terminaltables",
     "tqdm"
 ]
+
+[build-system]
+requires = ["setuptools", "numpy", "Cython", "colorama", "cython", "h5py", "jupyter", "matplotlib", "numpy", "psutil", "scipy", "terminaltables", "tqdm"]
+build-backend = "setuptools.build_meta"
 
 license = {text = "GPLv3+"}
 
@@ -44,7 +49,3 @@ classifiers = [
 dev = [
     "pytest>=8.3.4",
 ]
-
-[build-system]
-requires = ["setuptools", "numpy", "Cython", "colorama", "cython", "h5py", "jupyter", "matplotlib", "numpy", "psutil", "scipy", "terminaltables", "tqdm",]
-build-backend = "setuptools.build_meta"
