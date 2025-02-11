@@ -4,6 +4,25 @@ version = "3.1.7"
 description = "Electromagnetic Modelling Software based on the Finite-Difference Time-Domain (FDTD) method"
 readme = {file = "README.rst", content-type = "text/x-rst"}
 requires-python = ">=3.11"
+license = {text = "GPLv3+"}
+
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Cython",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering"
+]
+
+authors = [
+    {name = "Craig Warren"},
+    {name = "Antonis Giannopoulos"}
+]
+
+urls = {Homepage = "http://www.gprmax.com"}
 
 dependencies = [
     "setuptools",
@@ -23,26 +42,6 @@ dependencies = [
 [build-system]
 requires = ["setuptools", "numpy", "Cython", "colorama", "cython", "h5py", "jupyter", "matplotlib", "numpy", "psutil", "scipy", "terminaltables", "tqdm"]
 build-backend = "setuptools.build_meta"
-
-license = {text = "GPLv3+"}
-
-authors = [
-    {name = "Craig Warren"},
-    {name = "Antonis Giannopoulos"}
-]
-
-urls = {Homepage = "http://www.gprmax.com"}
-
-classifiers = [
-    "Environment :: Console",
-    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
-    "Operating System :: MacOS",
-    "Operating System :: Microsoft :: Windows",
-    "Operating System :: POSIX :: Linux",
-    "Programming Language :: Cython",
-    "Programming Language :: Python :: 3",
-    "Topic :: Scientific/Engineering"
-]
 
 
 [dependency-groups]
